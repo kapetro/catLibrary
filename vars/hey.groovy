@@ -6,7 +6,8 @@ def call( Map map = [:], Map params = [:], String nesto = "") {
   map.someList.each {
     echo "hej"
   }
-  if (map.someList)
+  map.someList = map.someList ? map.someList : []
+  if (map.someList.isEmpty())
     echo "Lista: ${map.someList}"
   else echo "Null je"
   
