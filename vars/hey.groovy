@@ -8,5 +8,6 @@ def call( Map map = [:], Map params = [:], String nesto = "") {
   }
   if (map.someList)
     echo "Lista: ${map.someList}"
-  else "Null je"
+  else echo "Null je"
+  
 }
