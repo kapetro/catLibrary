@@ -7,6 +7,6 @@ def call( Map map = [:], Map params = [:], String nesto = "") {
     echo "hej"
   }
   if (map.someList != null)
-    echo "Lista prazna: ${map.someList}"
+    echo "Lista: ${map.someList}"
   else echo "Ne definirana lista"
 }
